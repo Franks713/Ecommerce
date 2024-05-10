@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+      <link rel="stylesheet" href="/sign.css">
+
+      <title>Registeration</title>
+   </head>
+   <body>
+      <div class="login">
+         <img src="/img/Ecommerce-Website.webp" alt="image" class="login__bg">
+
+         <form action="" class="login__form">
+            <h1 class="login__title">User Register</h1>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input type="text" placeholder="Email ID" id="name" class="login__input">
+                  <i class="ri-mail-fill"></i>
+               </div>
+
+               <div class="login__box">
+                  <input type="password" placeholder="Password" id="password" required class="login__input">
+                  <i class="ri-lock-2-fill"></i>
+               </div>
+               <div class="login__box">
+                 <input type="password" placeholder="Confirm Password" id="confirmpassword" required class="login__input">
+                 <i class="ri-lock-2-fill"></i>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-box">
+                  <input type="checkbox" class="login__check-input" id="user-check">
+                  <label for="user-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+            <input type="submit" value="Register" class= "login__button" onclick="reg()">
+         </form>
+      </div>
+
+      <script>
+        function reg(){
+            var email = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+            var confirmpassword = document.getElementById("confirmpassword").value;
+            if(name=="", password=="" && confirmpassword==""){
+                window.location.assign("sign.html");
+                
+            }
+            else{
+                window.location.assign("sign.html");
+            }
+        }
+    </script>
+   </body>
+</html>
